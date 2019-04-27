@@ -51,4 +51,13 @@ dependencies {
 
     //HttpInterceptor
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+
+    // RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    // to use RxAndroid with retrofit.
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
 }

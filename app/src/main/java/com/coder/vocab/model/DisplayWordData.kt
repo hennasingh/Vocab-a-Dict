@@ -1,4 +1,4 @@
 package com.coder.vocab.model
 
-class LexicalEntry {
+class DisplayWordData {
 }
