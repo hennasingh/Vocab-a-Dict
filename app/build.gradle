@@ -39,25 +39,31 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
 
-    //Retrofit dependency
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
-
-    //GSON converter
-    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
     //dagger dependencies
     implementation 'com.google.dagger:dagger-android:2.20'
     kapt 'com.google.dagger:dagger-compiler:2.21'
 
-    //HttpInterceptor
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    // Reactive
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroid_version"
 
-    //RxJava
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    // Networking
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
 
-    // RxAndroid
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //LiveData and ViewModel
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
-    // to use RxAndroid with retrofit.
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:$support_library_version"
+
+    // CardView
+    implementation "androidx.cardview:cardview:$support_library_version"
+
+
 }
